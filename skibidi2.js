@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
     const page = await browser.newPage();
 
     // Navigate to the initial website
-    await page.goto('https://securly.com');
+    await page.goto('https://google.com');
 
     // Wait for the redirection to complete
     await page.waitForNavigation();
