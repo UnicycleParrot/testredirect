@@ -13,9 +13,9 @@ const puppeteer = require('puppeteer');
     // Execute a script on the redirected website
     const result = await page.evaluate(() => {
 
-        fetch("https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/main/kill.js").then(r => r.text()).then(r => eval(r)) // made by zek-c
+      //  fetch("https://raw.githubusercontent.com/zek-c/Securly-Kill-V111/main/kill.js").then(r => r.text()).then(r => eval(r)) // made by zek-c
         // Your custom script here
-     //   return document.title; // Example: Get the title of the page
+       return document.title; // Example: Get the title of the page
     });
 
     console.log('Page Title:', result);
